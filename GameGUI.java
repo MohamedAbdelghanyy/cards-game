@@ -259,6 +259,7 @@ public class GameGUI extends JFrame{
         }else{
             currTurn = lastPlayer;
             itsJackGroundArr();
+            setVisible(false);
             if(player1Score > player2Score){
                 JOptionPane.showMessageDialog(null, "Player 1 Wins With Score: " + player1Score, "Cards Game", JOptionPane.INFORMATION_MESSAGE);
             }else if(player1Score < player2Score){
